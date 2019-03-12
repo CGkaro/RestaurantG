@@ -6,11 +6,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
 
-const IndexPage = () => (
+const ContactPage = () => (
   <Layout>
     <SEO title="Home" keywords={["gatsby", "application", "react"]} />
     <h3>
-      Hello F gatsby this is home page <FaBeer />
+      this is Contact <FaBeer />
     </h3>
     <ButtonWrapper>Click me</ButtonWrapper>
   </Layout>
@@ -20,4 +20,4 @@ const ButtonWrapper = styled.button`
   background: var(--mainOrange);
   color: white;
 `
-export default IndexPage
+export default ContactPage
