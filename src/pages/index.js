@@ -1,23 +1,22 @@
 import React from "react"
 //import { Link } from "gatsby"
-import { FaBeer } from "react-icons/fa"
 import Layout from "../components/layout"
 //import Image from "../components/image"
 import SEO from "../components/seo"
-import styled from "styled-components"
+import { HomeHeader, Banner, BannerButton } from "../utils"
+import img from "../images/bcg/homeBcg.jpeg"
+import QuickInfo from "../components/HomePageComponents/quickInfo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={["gatsby", "application", "react"]} />
-    <h3>
-      Hello F gatsby this is home page <FaBeer />
-    </h3>
-    <ButtonWrapper>Click me</ButtonWrapper>
+    <HomeHeader img={img}>
+      <Banner title="EATERY" subtitle="55 main st Santa Monica CA">
+        <BannerButton style={{ margin: "2rem auto" }}>Menu</BannerButton>
+      </Banner>
+    </HomeHeader>
+    <QuickInfo />
   </Layout>
 )
 
-const ButtonWrapper = styled.button`
-  background: var(--mainOrange);
-  color: white;
-`
 export default IndexPage

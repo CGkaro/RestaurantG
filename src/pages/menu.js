@@ -5,14 +5,16 @@ import Layout from "../components/layout"
 //import Image from "../components/image"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import { PageHeader, Banner } from "../utils"
+import mnImg from "../images/bcg/menuBcg.jpeg"
 
 const MenuPage = () => (
   <Layout>
     <SEO title="Home" keywords={["gatsby", "application", "react"]} />
-    <h3>
-      this is Menu <FaBeer />
-    </h3>
-    <ButtonWrapper>Click me</ButtonWrapper>
+
+    <PageHeader img={mnImg}>
+      <Banner title="Menu" subtitle={`let's dig in`} />
+    </PageHeader>
   </Layout>
 )
 
