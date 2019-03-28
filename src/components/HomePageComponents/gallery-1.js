@@ -6,12 +6,13 @@ import Img from "gatsby-image"
 
 const GET_IMAGES = graphql`
   {
-    getImages: allFile(filter: { relativeDirectory: { eq: "homeGallery" } }) {
+    allContentfulPhotoGallery {
       edges {
         node {
-          childImageSharp {
+          name
+          img {
             fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid_tracedSVG
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
         }
@@ -25,17 +26,17 @@ export default function Gallery() {
     <StaticQuery
       query={GET_IMAGES}
       render={data => {
-        const images = data.getImages.edges
+        const images = data.allContentfulPhotoGallery.edges
 
         return (
           <Section>
             <GalleryWrapper>
               {images.map(({ node }, index) => {
-                console.log(`item item-${index + 1}`)
+                console.log(" NODEEEEE", node)
                 return (
                   <div key={index} className={`item item-${index + 1}`}>
-                    <Img fluid={node.childImageSharp.fluid} />
-                    <p className="info"> content info</p>
+                    <Img fluid={node.img.fluid} />
+                    <p className="info"> {node.name}</p>
                   </div>
                 )
               })}

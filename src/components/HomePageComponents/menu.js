@@ -1,9 +1,8 @@
 import React from "react"
 import Product from "./product"
 import { StaticQuery, graphql } from "gatsby"
-import { Section, Title, SectionButton } from "../../utils"
+import { Section, Title } from "../../utils"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 const PRODUCTS = graphql`
   {
@@ -16,7 +15,7 @@ const PRODUCTS = graphql`
           ingredients
           img {
             fixed(width: 150, height: 150) {
-              ...GatsbyContentfulFixed_tracedSVG
+              ...GatsbyContentfulFixed
             }
           }
         }
@@ -28,15 +27,16 @@ const PRODUCTS = graphql`
 export default function Menu() {
   return (
     <Section>
-      <Title title="blahba" subtitle=" ljgnseln lknlgw" />
+      <Title title="Menu" message="This is our menu" />
       <ProductList>
         <StaticQuery
           query={PRODUCTS}
           render={data => {
-            console.log(data)
+            //console.log(data)
             const products = data.allContentfulMenu.edges
-            console.log(products)
+            //console.log(products)
             return products.map(item => {
+              console.log("MENU ITEM\\", item.node.img)
               return <Product key={item.node.id} product={item.node} />
             })
           }}

@@ -12,8 +12,8 @@ export default function Product({ product }) {
       <Img fixed={fixed} className="img" />
       <div className="text">
         <div className="product-content">
-          <h3 className="name">{name}</h3>
-          <h3 className="price">{price}</h3>
+          <h4 className="name">{name}</h4>
+          <h5 className="price">$ {price}</h5>
         </div>
         <p className="info">{ingredients}</p>
       </div>
@@ -27,7 +27,7 @@ const ProductWrapper = styled.div`
     grid-column-gap: 1rem;
   }
   .img {
-    border-radius: 0.5rem;
+    border-radius: 5rem;
   }
   .product-content {
     display: flex;
@@ -42,6 +42,7 @@ const ProductWrapper = styled.div`
   .price {
     color: ${styles.colors.mainYellow};
     margin-top: 0.5rem;
+    font-weight: lighter;
   }
   .info {
     color: ${styles.colors.mainBlack};

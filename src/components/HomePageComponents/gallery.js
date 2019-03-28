@@ -9,7 +9,7 @@ const SINGLE_IMAGE = graphql`
     img1: file(relativePath: { eq: "homeGallery/img-1.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -17,7 +17,7 @@ const SINGLE_IMAGE = graphql`
     img2: file(relativePath: { eq: "homeGallery/img-2.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -25,7 +25,7 @@ const SINGLE_IMAGE = graphql`
     img3: file(relativePath: { eq: "homeGallery/img-3.jpeg" }) {
       childImageSharp {
         fluid(maxWidth: 500) {
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
