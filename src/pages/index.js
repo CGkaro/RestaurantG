@@ -13,7 +13,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={["gatsby", "application", "react"]} />
     <HomeHeader img={img}>
-      <Banner title="EATERY" subtitle="55 main st Santa Monica CA">
+      <Banner title="de Laffayette" subtitle="55 main st Santa Monica CA">
         <Link to="/menu/">
           <BannerButton style={{ margin: "2rem auto" }}>Menu</BannerButton>
         </Link>

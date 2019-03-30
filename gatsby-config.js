@@ -1,6 +1,10 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+let env =
+  process.env.GATSBY_ACTIVE_ENV ||
+  process.env.NODE_ENV ||
+  "development" ||
+  require("dotenv/config").config({
+    path: `.env.${env}`,
+  })
 module.exports = {
   siteMetadata: {
     title: `Restaurant`,

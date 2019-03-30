@@ -6,9 +6,9 @@ export default class NavbarLinks extends Component {
   state = {
     links: [
       { id: 0, path: "/", name: "home" },
-      { id: 1, path: "/about/", name: "about" },
-      { id: 2, path: "/menu/", name: "menu" },
-      { id: 3, path: "/contact/", name: "contact" },
+      { id: 1, path: "/contact/", name: "Contacto" },
+      { id: 2, path: "/menu/", name: "Menu" },
+      { id: 3, path: "/reservations/", name: "Reservaciones" },
     ],
   }
   render() {

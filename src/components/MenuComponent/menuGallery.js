@@ -14,7 +14,7 @@ const GET_IMAGES = graphql`
           date
           img {
             fluid {
-              ...GatsbyContentfulFluid_tracedSVG
+              ...GatsbyContentfulFluid
             }
           }
         }

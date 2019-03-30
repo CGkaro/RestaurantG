@@ -14,18 +14,35 @@ export default function Banner({ title, subtitle, children }) {
 const BannerWrapper = styled.div`
   margin-bottom: 3rem;
   text-align: center;
-  .title {
-    font-size: 3rem;
-    text-transform: uppercase;
-    ${styles.letterSpacing({ spacing: "0.75rem" })};
-    color: ${styles.colors.mainWhite};
+  @media (min-width: 360px) {
+    .title {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      ${styles.letterSpacing({ spacing: "0.45rem" })};
+      color: ${styles.colors.mainWhite};
+    }
+    .subtitle {
+      ${styles.textSlanted};
+      ${styles.letterSpacing({ spacing: "0.1rem" })};
+      font-size: 1.2rem;
+      text-transform: capitalize;
+      color: ${styles.colors.mainWhite};
+    }
   }
-  .subtitle {
-    ${styles.textSlanted};
-    ${styles.letterSpacing({ spacing: "0.1rem" })};
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    color: ${styles.colors.mainWhite};
+  @media (min-width: 768px) {
+    .title {
+      font-size: 3rem;
+      text-transform: uppercase;
+      ${styles.letterSpacing({ spacing: "0.75rem" })};
+      color: ${styles.colors.mainWhite};
+    }
+    .subtitle {
+      ${styles.textSlanted};
+      ${styles.letterSpacing({ spacing: "0.1rem" })};
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      color: ${styles.colors.mainWhite};
+    }
   }
 `
 

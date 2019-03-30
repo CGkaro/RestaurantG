@@ -12,7 +12,7 @@ const GET_IMAGES = graphql`
           name
           img {
             fluid(maxWidth: 500) {
-              ...GatsbyContentfulFluid_tracedSVG
+              ...GatsbyContentfulFluid
             }
           }
         }

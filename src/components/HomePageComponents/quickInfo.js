@@ -7,7 +7,7 @@ import { styles } from "../../utils"
 export default function QuickInfo() {
   return (
     <Section>
-      <Title message="let us tell you" title="Our Mission" />
+      <Title message="Dejanos contarte" title="Nuestra misión" />
       <QuickInfoWrapper>
         <p className="text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est odit
@@ -21,7 +21,7 @@ export default function QuickInfo() {
         <Link to={"/about/"} style={{ textDecoration: "none" }} />
       </QuickInfoWrapper>
       <Link to="/about">
-        <SectionButton style={{ margin: "2rem auto" }}>About</SectionButton>
+        <SectionButton style={{ margin: "2rem auto" }}>Acerca de</SectionButton>
       </Link>
     </Section>
   )

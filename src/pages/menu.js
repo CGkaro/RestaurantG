@@ -11,7 +11,7 @@ const MenuPage = () => (
   <Layout>
     <SEO title="Home" keywords={["gatsby", "application", "react"]} />
     <PageHeader img={mnImg}>
-      <Banner title="Menu" subtitle={`let's dig in`} />
+      <Banner title="Menu" subtitle={`Vamos a degustar`} />
     </PageHeader>
     <Menu />
     <MenuGallery />

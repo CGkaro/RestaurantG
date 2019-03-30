@@ -4,7 +4,7 @@ import ExtrainfoSection from "./extraInfoSection"
 import { PageHeader, Banner } from "../../utils"
 import abImg from "../../images/candles-catering-celebration.jpg"
 
-export default function ContactSection() {
+export default function ReservationsSection() {
   return (
     <div>
       <ExtrainfoSection />
