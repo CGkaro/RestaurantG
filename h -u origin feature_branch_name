@@ -1,0 +1,59 @@
+[33mcommit a1c844bd04ca815c48d833bb672c16ffe29b31a4[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: Carlos <practicantes4@lopez-fernandez.com>
+Date:   Fri Mar 29 22:40:13 2019 -0700
+
+    Styled Menu page, reservations and contact page
+
+[33mcommit 87296d8075ef0be79820ba0286a60ca561433fb0[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Carlos <practicantes4@lopez-fernandez.com>
+Date:   Thu Mar 28 10:47:05 2019 -0700
+
+    Added New contact and menu folder components. Added content to Menu and Content pages.
+
+[33mcommit 3d264c079d542a1d0e3c3516338c56927557814b[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Carlos <practicantes4@lopez-fernandez.com>
+Date:   Wed Mar 13 19:11:54 2019 -0700
+
+    finished tut yeii
+
+[33mcommit a8bddf9ff259d0f8abd8612e8d510ae88d565d60[m
+Author: Carlos <practicantes4@lopez-fernandez.com>
+Date:   Wed Mar 13 17:54:27 2019 -0700
+
+    test variables
+
+[33mcommit 34febcc20fe75041d9b16d49d2973badf54ce445[m
+Author: Carlos <practicantes4@lopez-fernandez.com>
+Date:   Wed Mar 13 17:48:16 2019 -0700
+
+    establish contact with contentful
+
+[33mcommit 455582f407df94f2c348c23e6e3aef8542243504[m
+Author: Carlos <practicantes4@lopez-fernandez.com>
+Date:   Wed Mar 13 14:38:38 2019 -0700
+
+    Added gallery component in HomepageComponents folder and added it to the index.js  in /pages
+
+[33mcommit 537f7174d2cac27b2ef4541df7a3dc0c5626493c[m
+Author: Carlos <practicantes4@lopez-fernandez.com>
+Date:   Tue Mar 12 19:45:19 2019 -0700
+
+    Added utils folder with components, footer to globals, added homepagecomponent folder and inside created quick info component, styled all pages in pages folder
+
+[33mcommit 9e22149cf35d96ace9d53eecfb7d32ecfb408e32[m
+Author: Carlos <practicantes4@lopez-fernandez.com>
+Date:   Tue Mar 12 14:51:42 2019 -0700
+
+    navbar added
+
+[33mcommit 059bc8823700793b15f18d1b9eb29b1656667d60[m
+Author: Carlos <practicantes4@lopez-fernandez.com>
+Date:   Mon Mar 11 12:02:52 2019 -0700
+
+    first commit
+
+[33mcommit c9876fae01aa7ff406294adf9b9862b500dea1ba[m
+Author: Carlos <practicantes4@lopez-fernandez.com>
+Date:   Mon Mar 11 11:35:08 2019 -0700
+
+    Initial commit from gatsby: (https://github.com/gatsbyjs/gatsby-starter-default.git)

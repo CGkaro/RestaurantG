@@ -20,8 +20,8 @@ export default function QuickInfo() {
         </p>
         <Link to={"/about/"} style={{ textDecoration: "none" }} />
       </QuickInfoWrapper>
-      <Link to="/about">
-        <SectionButton style={{ margin: "2rem auto" }}>Acerca de</SectionButton>
+      <Link to="/contact/">
+        <SectionButton style={{ margin: "2rem auto" }}>Contacto</SectionButton>
       </Link>
     </Section>
   )
